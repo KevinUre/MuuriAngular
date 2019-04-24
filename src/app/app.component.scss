@@ -1,0 +1,57 @@
+.grid {
+  position: relative;
+}
+.item {
+  display: block;
+  position: absolute;
+  margin: 0.66em; //padding on items
+  z-index: 1;
+  background: #000;
+  color: #fff;
+}
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.franklin {
+  width: 300px;
+  height: 300px;
+}
+// .dubs {
+//   width: 300px;
+//   height: 200px;
+// }
+// .and-change {
+//   width: 150px;
+//   height: 150px;
+// }
+// .long-cat {
+//   width: 100px;
+//   height: 250px;
+// }
+.adaptive-size {
+  width: auto;
+  height: auto;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.widget-handle {
+  position: relative;
+  width: 100%;
+  min-width: 100px;
+  height: 15px;
+  background: gray;
+}
+[hidden] { display: none !important;}
